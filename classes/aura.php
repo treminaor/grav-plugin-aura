@@ -465,7 +465,7 @@ class Aura
             $this->webpage->image          = new Image();
             $this->webpage->image->id      = $this->webpage->url . '#primaryimage';
             $this->webpage->image->caption = $this->webpage->title;
-            $this->webpage->image->url     = $url;
+            $this->webpage->image->url     = urlencode($url);
             $this->webpage->image->width   = $image->get('width');
             $this->webpage->image->height  = $image->get('height');
             $this->webpage->image->type    = $image->get('mime');
